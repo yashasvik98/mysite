@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>        
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
         <div class="navigation">
@@ -16,15 +19,15 @@
             <div class="navigation_background">&nbsp;</div>
             <nav class="navigation_nav">
                 <ul class="navigation_list">
-                    <li class="navigation_item"><a href="#" class="navigation_link">Home</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">Portfolio</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">About</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">Contact Me</a></li>
+                    <li class="navigation_item"><a href="#header" onclick="uncheck()" class="navigation_link">Home</a></li>
+                    <li class="navigation_item"><a href="#portfolio" onclick="uncheck()" id="navigationlink" class="navigation_link">Portfolio</a></li>
+                    <li class="navigation_item"><a href="#about" onclick="uncheck()" class="navigation_link">About</a></li>
+                    <li class="navigation_item"><a href="#contact" onclick="uncheck()" class="navigation_link">Contact Me</a></li>
                 </ul>
 
             </nav>
         </div>
-        <div class="header">
+        <div id="header" class="header">
             <div class="text-box">
                 <h1 class="title animated bounce">
                     <span class="header-title">Hello World</span>
@@ -34,11 +37,85 @@
                     <p class="line-2 anim-line-2">Full Stack Developer.</p>
                 </h2>
             </div>   
-            <a href="#" class="btn btn-white discover">Discover my work</a>
+            <a href="#portfolio"  class="btn btn-white discover">Discover my work</a>
         </div>
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <div class="portfolio-box">
+                <h1 class="portfolio-title">
+                    Portfolio
+                </h1>
+            </div>
+            <div class="cards-box">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card-title">Internify</h3>
+                            <hr class="line">
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos illo deserunt! Exercitationem repudiandae illo ea officia iusto, expedita modi vel ducimus, maxime non corporis perspiciatis, laborum voluptas doloribus. Reprehenderit.</p>
+                            <br>
+                            <p class="stack"><b>Technologies Used:</b></p>
+                            <div class="card-btn-group">
+                                <a class="github card-btn" href="https://github.com/yashasvik98/Internify"><i class="fas fa-code"></i></a>
+                                <a class="demo card-btn" href="http://internify.000webhostapp.com/"><i class="fas fa-desktop "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card-title">Title 2</h3>
+                            <hr class="line">
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos illo deserunt! Exercitationem repudiandae illo ea officia iusto, expedita modi vel ducimus, maxime non corporis perspiciatis, laborum voluptas doloribus. Reprehenderit.</p>
+                            <br>
+                            <p class="stack"><b>Technologies Used:</b></p>
+                            <div class="card-btn-group">
+                                <a class="github card-btn" href="#"><i class="fas fa-code"></i></a>
+                                <a class="demo card-btn" href="#"><i class="fas fa-desktop "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card-title">Title 3</h3>
+                            <hr class="line">
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos illo deserunt! Exercitationem repudiandae illo ea officia iusto, expedita modi vel ducimus, maxime non corporis perspiciatis, laborum voluptas doloribus. Reprehenderit.</p>
+                            <br>
+                            <p class="stack"><b>Technologies Used:</b></p>
+                            <div class="card-btn-group">
+                                <a class="github card-btn" href="#"><i class="fas fa-code"></i></a>
+                                <a class="demo card-btn" href="#"><i class="fas fa-desktop "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h3 class="card-title">Title 4</h3>
+                            <hr class="line">
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos illo deserunt! Exercitationem repudiandae illo ea officia iusto, expedita modi vel ducimus, maxime non corporis perspiciatis, laborum voluptas doloribus. Reprehenderit.</p>
+                            <br>
+                            <p class="stack"><b>Technologies Used:</b></p>
+                            <div class="card-btn-group">
+                                <a class="github card-btn" href="#"><i class="fas fa-code"></i></a>
+                                <a class="demo card-btn" href="#"><i class="fas fa-desktop "></i></a>
+                            </div>    
+                        </div>
+                    </div>
+                           
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div id="about" class="about">
+            <div class="about-box">
+                <h1 class="about-title"> 
+                    About
+                </h1>
+            </div>
+            <div class="details-box">
+                
             </div>
         </div>
+
     </body>
 </html>
