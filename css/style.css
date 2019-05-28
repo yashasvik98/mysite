@@ -587,6 +587,38 @@ body{
   font-weight: 100;
 }
 
+
+.download{
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  background-color: #9e9e9e;
+  border: 0;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: 'Inconsolata', monospace;
+  font-size:  0.75em;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all .2s;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.349);
+  text-decoration: none;
+  
+}
+
+
+.download:hover{
+  
+  box-shadow: 0 10px 30px rgba(0,0,0,.75);
+}
+
+.download:active{
+ 
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+
 /* Contact Section */
 
 .contact{
@@ -598,7 +630,7 @@ body{
   text-align: center;
   background-color: #3a3a3a;
   clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 0);
-
+  z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -644,4 +676,26 @@ body{
    color: #fff;
    display: inline-block;
    margin: 20px;
+ }
+
+
+ /* Footer Section */
+ .footer{
+   position: relative;
+   height: 15vh;
+   margin-top: -15vh;
+   background-color: #141414;
+   text-align: right;
+   padding: 20px;
+  
+ }
+ .footer-text{
+   margin-top: 4vh;
+   color: #fff;
+   z-index: 10;
+ }
+
+ .myname{
+   text-decoration: none;
+   color: #ff5e00;
  }
