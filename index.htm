@@ -20,8 +20,8 @@
             <nav class="navigation_nav">
                 <ul class="navigation_list">
                     <li class="navigation_item"><a href="#header" onclick="uncheck()" class="navigation_link">Home</a></li>
-                    <li class="navigation_item"><a href="#portfolio" onclick="uncheck()" id="navigationlink" class="navigation_link">Portfolio</a></li>
                     <li class="navigation_item"><a href="#about" onclick="uncheck()" class="navigation_link">About</a></li>
+                    <li class="navigation_item"><a href="#portfolio" onclick="uncheck()" id="navigationlink" class="navigation_link">Portfolio</a></li>
                     <li class="navigation_item"><a href="#contact" onclick="uncheck()" class="navigation_link">Contact</a></li>
                 </ul>
 
@@ -29,15 +29,27 @@
         </div>
         <div id="header" class="header">
             <div class="text-box">
-                <h1 class="title animated bounce">
-                    <span class="header-title">Hello World</span>
+                <h1 class="title">
+                    <span class="header-title glitch" data-text="YASHASVI KUMAR">YASHASVI <b>KUMAR</b></span>
                 </h1>
                 <h2 class="text">
-                    <p class="line-1 anim-typewriter anim-cursor">I'm <span class="main-name">Yashasvi Kumar.</span></p>
-                    <p class="line-2 anim-line-2">Full Stack Developer.</p>
+                    <p class="line-1 anim-typewriter anim-cursor">Full Stack Developer.</p>
+                    
                 </h2>
             </div>   
-            <a href="#portfolio"  class="btn btn-white discover">Discover my work</a>
+            <a href="#portfolio"  class="btn btn-white discover">View my work</a>
+        </div>
+        <div id="about" class="about">
+            <div class="about-box">
+                <h1 class="about-title"> 
+                    About
+                </h1>
+                <div class="details-box">
+                    <p class="about-details">I'm a self-motivated Full Stack Developer with experience in building completely functional web applications. Initiative-taker, quality-driven and ready to be challenged. Well-rounded problem-solving team player with dynamic written and verbal communication skills. Looking forward to work with a great team and a product that impacts the world.</p>
+                    <br>
+                    <a class="download" href="yashasvi-kumar-resume.pdf" download>Download Resume</a>
+                </div>
+            </div> 
         </div>
         <div id="portfolio" class="portfolio">
             <div class="portfolio-box">
@@ -60,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+                    <!-- <div class="column">
                         <div class="card">
                             <h3 class="card-title">Student Counselling System</h3>
                             <hr class="line">
@@ -72,7 +84,7 @@
                                 <a class="demo card-btn" href="#"><i class="fas fa-desktop "></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="column">
                         <div class="card">
                             <h3 class="card-title">Time Table Manager</h3>
@@ -107,46 +119,41 @@
                         </div>
                     </div> -->     
                 </div>
-                
-            </div>
-            
-            
+            </div>    
         </div>
-        <div id="about" class="about">
-            <div class="about-box">
-                <h1 class="about-title"> 
-                    About
+        <div id="technical-skills" class="technical-skills">
+            <div class="skills-box">
+                <h1 class="skills-title"> 
+                    Skills
                 </h1>
-                <div class="details-box">
-                    <p class="name"><span class="detail-title">Full Name:</span> Vatyam Sai Yashasvi Kumar</p>
-                    <p class="name"><span class="detail-title">Education:</span> Bachelor's in Computer Science</p>
-                    <p class="name"><span class="detail-title">Skills:</span><br><b class="skills">Front-End:</b>HTML5, CSS3, Bootstrap, React, Redux, jQuery<br><b class="skills">Back-End:</b>Nodejs, Django, PHP, Python <br><b class="skills">Databases:</b>MySQL, PostgreSQL, MongoDB <br><b class="skills">Other:</b>Git, Ajax <br></p>
-                    <p class="name"><span class="detail-title">Experience:</span> Freelancer (Full Stack Developer) - 1 year</p>
-                    <br>
-                    <a class="download" href="yashasvi-kumar-resume.pdf" download>
-                        Resume
-                    </a>
-                </div>
+                <h2 class="group-title">Front-End</h2>
+                <p class="group-elements">HTML5, CSS3, React, Redux, Javascript, jQuery</p>
+                <h2 class="group-title">Back-End</h2>
+                <p class="group-elements">Node.js, Django, PHP</p>
+                <h2 class="group-title">Databases</h2>
+                <p class="group-elements">MySQL, PostgreSQL, MongoDB</p>
+                <h2 class="group-title">Others</h2>
+                <p class="group-elements">Python, C++, C, Git</p>
             </div> 
         </div>
         <div id="contact" class="contact">
+            <div class="contact-box">
+                <h1 class="contact-title"> 
+                    Contact
+                </h1>
                 <div class="contact-box">
-                    <h1 class="contact-title"> 
-                        Contact
-                    </h1>
-                    <div class="contact-box">
-                        <p class="name">Email: yashasvik98@gmail.com</p>
-                        <p class="name">Phone: +91 8464962264</p>
-                        <br>
-                        <br>
-                        <a class="icons" href="https://github.com/yashasvik98"><i class="fab fa-github fa-3x"></i></a>
-                        <a class="icons" href="https://www.linkedin.com/in/sai-yashasvi-kumar-vatyam-740857175/"><i class="fab fa-linkedin fa-3x"></i></a>
-                    </div>
-                </div> 
-            </div>
-            <div class="footer">
-                <p class="footer-text">&copy; 2019 Copyright <br>Designed by <a class="myname" href="https://yashasvik98.github.io/mysite/">Yashasvi Kumar</a></p>
-            </div>
+                    <p class="name">Email: yashasvik98@gmail.com</p>
+                    <p class="name">Phone: +91 8464962264</p>
+                    <br>
+                    <br>
+                    <a class="icons" href="https://github.com/yashasvik98"><i class="fab fa-github fa-3x"></i></a>
+                    <a class="icons" href="https://www.linkedin.com/in/sai-yashasvi-kumar-vatyam-740857175/"><i class="fab fa-linkedin fa-3x"></i></a>
+                </div>
+            </div> 
+        </div>
+        <div class="footer">
+            <p class="footer-text">&copy; 2019 Copyright <br>Designed by <a class="myname" href="https://yashasvik98.github.io/mysite/">Yashasvi Kumar</a></p>
+        </div>
 
     </body>
 </html>
